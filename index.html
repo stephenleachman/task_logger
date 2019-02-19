@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+
+    <style>
+        body{background: #546e7a ;}
+        .container{margin-top:25px;}
+        .container .input-field input[type=text]:focus{border-bottom: 1px solid #00acc1 ; box-shadow: 0 1px 0 0 #ede7f6 ;}
+        .container .input-field input[type=text]:focus + label {color: #00acc1 ;}
+    </style>
+    
+    <title>Task List</title>
+</head>
+<body>
+    <nav>
+        <div class="nav-wrapper cyan darken-1">
+            <a href="#" class="brand-logo center">Task Loger</a>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="row">
+            <div class="col s12">
+                <div id="main" class="card">
+                    <div class="card-content">
+                        <div class="row">
+                            <form id="task-form">
+                                <div class="input-field col s12">
+                                    <input type="text" name="task" id="task">
+                                    <label for="task">New Task</label>
+                                </div>
+                                <input type="submit" value="Add Task" class="btn cyan darken-1">
+                            </form>
+                        </div>
+                    </div>
+                    <div class="card-action">
+                        <h5 class="" id="task-title">Task List</h5>
+                        <div class="input-field col s12">
+                            <input type="text" name="filter" id="filter">
+                            <label for="filter">Filter Task</label>
+                        </div>
+                        <ul class="collection"></ul>
+                        <a href="#" class="clear-task btn red lighten-1">Clear Tasks</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
