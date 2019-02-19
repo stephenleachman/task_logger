@@ -1,2 +1,2 @@
 # task_logger
-Website template
+JavaScript project
